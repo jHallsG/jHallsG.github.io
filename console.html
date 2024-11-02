@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Interface</title>
+    <link rel="stylesheet" href="consolestyle.css">
+</head>
+<body>
+
+    <div class = "container">
+        <div class = "intro">
+            <p> Hi, I'm <span id = "name">Jan Hassan D. Gahal</span>
+            <p> Welcome to my interactive portfolio. Type "help" to get started...</p></p> 
+        </div>
+
+        <div class="terminal">
+
+            <div id="output">
+                <div class = "help-container" style = "display : none">
+                    <p>Available commands: <span id = "options">aboutme, projects, education, contact, resume</span></p>
+                    <p>Type any available commands after the $ sign</p>
+                    <p>eg. <i>"janh@portfolio:~$aboutme"</i></p>
+                </div>
+
+                <div class = "aboutme-container" style = "display : none">
+                    <p>Hi, I'm Jan Hassan, a BSECE graduate. I'm a former Networks Field Engineer specializing in 
+                        Routing and Switching. I've found my passion as a Java Developer with focus on backend development. That doesn't stop me from knowing 
+                        a little frontend HTML, CSS, and Javascript though 😊. I have almost two years of experience developing personal projects on my 
+                        own focused on Springboot, JPA, Hibernate, Rest API and mySQL as the database.</p>
+                </div>
+
+                <div class = "contact-container" style = "display : none">
+                    <p>Email: janhassg@gmail.com</p>
+                    <p>Mobile: +639368785663</p>
+                </div>
+
+                <div class = "project-container" style = "display : none">
+                    <p>1. <a href = "http://ec2-3-27-70-108.ap-southeast-2.compute.amazonaws.com:8080/phbank.com/login/" target = "_blank"><b>PhBank</b></a></p>
+                    <p> • A fully functional online banking web application that supports fund transfers, balance viewing, deposits and transaction 
+                        history. Built using Spring MVC design pattern with Springboot and JSP, the application is integrated with Spring Security 
+                        for secure access. It is deployed on an AWS EC2 Instance and uses AWS RDS for database management.<br> </p>   
+                    <p> 2. <a href = "https://github.com/jHallsG/EduTrackPro_RestAPI" target = "_blank"><b>Edutrackpro</b></a></p>   
+                    <p>• A simple one-page management web application with all the CRUD functions. It is created with Java Spring, Rest API, and 
+                        Hibernate for frontend-backend communication. MySQL serves as the database.<br> </p>    
+                    <p>3. <a href = "https://github.com/jHallsG/FocusNinja" target = "_blank"><b>FocusNinja</b></a></p>    
+                    <p>• A desktop application using the concept of Pomodoro to assists with study sessions and enhance focus. It uses Java Swing 
+                        framework for the GUI creation.<br></p>
+                </div>
+
+                <div class = "education-container" style = "display : none">
+                    <div class="education-item"><span class="label">Institution</span> : <span class="value">Saint Mary's University of Bayombong</span></div>
+                    <div class="education-item"><span class="label">Degree</span> : <span class="value">Bachelor of Science in Electronics and Communications Engineering</span></div>
+                    <div class="education-item"><span class="label">Year Graduated</span> : <span class="value">2013</span></div>
+                </div>
+
+                <div class = "resume-container" style = "display : none">
+                    <p>Download resume copy <a href = "">here</a></p>
+                </div>
+            </div>
+
+            <div class="command-line">
+                <p class="command">janh@portfolio:~$</p>
+                <input type="text" id="input" autofocus/>
+            </div>
+    </div>
+    
+    <script src = "consolescript.js"></script>
+</body>
+</html>
