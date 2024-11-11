@@ -1,4 +1,3 @@
-/* Base Styles */
 body {
     margin: 0;
     padding: 0;
@@ -21,8 +20,6 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    text-align: center;
-    padding: 0 15px;
 }
 
 #options {
@@ -35,6 +32,7 @@ a {
 }
 
 .intro {
+    text-align: center;
     color: #bfbfc5;
 }
 
@@ -54,6 +52,7 @@ a {
     color: #c59eff;
     font-size: 1.5em;
     margin-right: 5px;
+
 }
 
 #input {
@@ -97,57 +96,17 @@ a {
     color: #f0d36e;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .terminal {
-        max-width: 80%; /* Expand to 80% on medium screens */
-    }
-
-    .container {
-        font-size: 1em; /* Reduce font size for readability */
-    }
-
-    #name {
-        font-size: 1.2em;
-    }
-
-    .command {
-        font-size: 1.2em; /* Adjust command prompt font size */
-    }
-
-    #input {
-        font-size: 1.2em;
-    }
+.phbank:after,
+.edutackpro:after,
+.focus:after  {
+    content: '\00bb';
+    opacity : 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: 1px;
 }
 
-@media (max-width: 480px) {
-    .terminal {
-        max-width: 100%; /* Full width on small screens */
-        padding: 10px;
-    }
-
-    .container {
-        font-size: 0.9em; /* Further reduce font size for smaller screens */
-    }
-
-    #name {
-        font-size: 1em;
-    }
-
-    .command {
-        font-size: 1em;
-    }
-
-    #input {
-        font-size: 1em;
-    }
-
-    .education-item {
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .label, .value {
-        text-align: left;
-    }
+.phbank:hover:after,
+.edutackpro:hover:after,
+.focus:hover:after {
+    opacity : 1;
 }
