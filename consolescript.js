@@ -46,7 +46,7 @@ function displayOutput(text) {
 input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         clear();
-        const command = input.value.trim();
+        const command = input.value.toLowerCase().trim();
         displayOutput(`janh@portfolio:~$ ${command}`);
         handleCommand(command);
         input.value = "";
